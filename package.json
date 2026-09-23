@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
-  "homepage": "https://github.com/Abraham2904/Conference-ticket-generator-main#readme",
+  "homepage": "https://abraham2904.github.io/Conference-ticket-generator-main/",
   "bugs": {
     "url": "https://github.com/Abraham2904/Conference-ticket-generator-main/issues"
   },
@@ -19,9 +19,12 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
