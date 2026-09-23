@@ -7,8 +7,8 @@
   html{
     font-size: 100%;
   }
-  .title h1{
-    font-family: 'Inconsolata';
+  html, body, #root {
+  min-height: 100vh;
   }
   *{
     margin: 0;
@@ -16,9 +16,68 @@
     box-sizing: border-box;
   }
   .contenedor-principal{
-     font-family: 'Inconsolata';  
+    font-family: 'Inconsolata';  
     background-image: url('./assets/images/background-mobile.png');
     width: 100%;
-    height: 100%;
     background-size: cover;
+    display: flex;
+    align-items: start;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  .Diseno_pagina{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .pattern-lines{
+  position: absolute;
+  width: 60rem;
+  height: auto;
+  }
+  .pattern-circle{
+    position: absolute;
+    width: 30%;
+    top:-1.25rem;
+    left:-1.25rem;
+    z-index: 2;
+  }
+  .pattern-top{
+    position: absolute;
+    width:30%;
+    top:1.5rem;
+    right:0;
+    z-index: 2;
+  }
+  .pattern-bottom{
+    position: absolute;
+    width: 80%;
+    bottom:0;
+    left:0;
+    z-index: 2;
+  }
+  .pattern-circleMiddle{
+    position: absolute;
+    width: 30%;
+    top: 60%;
+    right: -3rem;
+    z-index:2;
+  }
+  .info-content{
+    position:relative;
+    width:100%;
+    z-index:3;
+  }
+  .logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .logoTitle{
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    width: 45%;
   }

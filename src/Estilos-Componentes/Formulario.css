@@ -1,0 +1,102 @@
+.Formulario{
+    padding: 1rem 1rem;
+}
+.Formulario h1{
+    line-height: 1;
+    font-size: 2rem;
+    font-family: 'Inconsolata';
+    text-align: center;
+   
+  }
+.Formulario p, .btn_generate{
+    margin-top:1.5rem;
+    font-size: 1.2rem;
+    
+}
+.content-inputAvatar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-sizing: border-box;
+}
+.content-inputAvatar > p{
+    text-align: left;
+    width: 100%;
+    color: #FFF;
+}
+.content-inputAvatar label{
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(0, 0%,100%, 0.1);
+    border-radius: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    border: 0.125rem dashed hsla(0, 0%,100%, 0.6);
+}
+.content-inputAvatar label:hover{
+    cursor:pointer;
+    background-color: hsla(0, 0%,100%, 0.2);
+}
+.input-file{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.Logo > img{
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    background-color:hsla(0, 0%,100%, 0.2);
+    border: 1px solid hsla(0, 0%,100%, 0.3);
+    padding: 0.5rem;
+}
+.Logo ~ p{
+    margin-top: 0.5rem;
+    font-size: 1.06rem;
+    margin-bottom: 1rem;
+}
+.input-hint{
+    width: 100%;
+    display:flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: start;
+}
+.input-hint p{
+    margin: 0;
+    font-size: 0.68rem;
+    letter-spacing: 0.1;
+}
+.label-input{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    gap: 0.25rem;
+}
+.label-input p{
+    color: #FAFAFA;
+}
+.label-input input{
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid hsla(0, 0%, 100%, 0.7);
+    background-color: hsla(0, 0%,100%, 0.1);
+    padding: 0.85rem 0.5rem;
+    font-family: 'Inconsolata';
+    font-size: 1rem;
+}
+input:hover{
+    cursor: pointer;
+}
+.btn_generate{
+    width: 100%;
+    padding: 0.85rem 0.5rem;
+    border-radius: 0.75rem;
+    border: none;
+    background-color: hsl(7, 88%, 67%);
+    color: hsl(248, 70%, 10%);
+    font-family: 'Inconsolata';
+    font-weight: 800;
+}
