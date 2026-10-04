@@ -1,12 +1,23 @@
 import '../Estilos-Componentes/Formulario.css';
 import iconUpload from '../assets/images/icon-upload.svg';
 import iconInfo from '../assets/images/icon-info.svg';
-export const Formulario = () =>{
+import { useState } from 'react';
+interface props{
+    onEnviarTicket: () => void;
+    onEnviarDatos: (nombre: string, email: string, github: string) => void;
+}
+export const Formulario = ({ onEnviarTicket, onEnviarDatos }: props) => {
+    const [nombre, setNombre] = useState<string>('');
+    const [email, setEmail] = useState<string>('');
+    const [github, setGithub] = useState<string>('');
    return(
     <div className='Formulario'>
     <h1>Your Journey to coding conf 2025 Starts Here!</h1>
     <p>Secure your spot at next year's biggest coding conference.</p>
-    <form className='formulario-datos'>
+    <form className='formulario-datos' onSubmit={(e) => {
+      e.preventDefault();
+      onEnviarTicket();
+    }}>
         <div className='content-inputAvatar'>
         <p>Upload Avatar</p>
         <label>
