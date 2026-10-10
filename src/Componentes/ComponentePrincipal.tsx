@@ -6,6 +6,7 @@ import logo from '../assets/images/pattern-lines.svg';
 import logoCircle from '../assets/images/pattern-circle.svg';
 import logoTop from '../assets/images/pattern-squiggly-line-top.svg';
 import logoBottom from '../assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg';
+import logoBottomDesk from '../assets/images/pattern-squiggly-line-bottom-desktop.svg';
 import '../Estilos-Componentes/ComponentePrincipal.css';
 import type { datosTicket } from '../Interface/datosTicket';
 export const ComponentePrincipal = () => {
@@ -30,7 +31,7 @@ export const ComponentePrincipal = () => {
       <img src={logo} className='pattern-lines'/>
       <img src={logoCircle} className='pattern-circle'/>
       <img src={logoTop} className='pattern-top'/>
-      <img src={logoBottom} className='pattern-bottom'/>
+      <img src={window.screen.width < 1024 ? logoBottom : logoBottomDesk} className='pattern-bottom'/>
       <img src={logoCircle} className='pattern-circleMiddle'/>
     </div>
     <div className='info-content'>

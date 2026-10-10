@@ -75,7 +75,7 @@ export const Formulario = ({ onEnviarTicket, onEnviarDatos }: props) => {
     }}>
         <div className='content-inputAvatar'>
         <p>Upload Avatar</p>
-        <label style={{borderColor: alertar && !url ?'red': alertaFile? 'red': undefined}} onClick={(e) => {
+        <label style={{borderColor: alertar && !url ?'red': alertaFile? 'red': undefined}} tabIndex={0} onClick={(e) => {
         if (url && e.target !== inputFile.current) e.preventDefault();
     }}>
              <input type='file' className='input-file'  onChange={(e) => URLImage(e)} ref={inputFile} />

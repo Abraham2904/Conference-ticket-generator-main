@@ -83,3 +83,27 @@
     margin-top: 3rem;
     width: 45%;
   }
+  @media (min-width:768px ){
+    .contenedor-principal{
+      background-image: url('../assets/images/background-tablet.png');
+    }
+  }
+  @media (min-width: 1024px){
+    .contenedor-principal{
+      background-image: url('../assets/images/background-desktop.png');
+    }
+    .logoTitle{
+      width: 17%;
+    }
+    .pattern-circle{
+      width: 10rem;
+      top: -4rem;
+      left: 2rem;
+    }
+    .pattern-circleMiddle{
+      width: 10rem;
+      top: 30rem;
+      right: 11rem;
+    }
+    
+  }
