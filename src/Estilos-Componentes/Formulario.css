@@ -154,7 +154,7 @@ input:hover{
     border: none;
     border-radius: 0.22rem;
     background-color: hsla(0, 0%, 100%, 0.2);
-    gap: 1rem;
+    cursor: pointer;
 }
 .btn-image p{
     text-align: center;

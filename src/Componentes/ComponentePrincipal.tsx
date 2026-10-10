@@ -8,6 +8,7 @@ import logoTop from '../assets/images/pattern-squiggly-line-top.svg';
 import logoBottom from '../assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg';
 import logoBottomDesk from '../assets/images/pattern-squiggly-line-bottom-desktop.svg';
 import '../Estilos-Componentes/ComponentePrincipal.css';
+import imagenMuestra from '../../../../../../Pictures/Screenshots/Captura de pantalla 2026-09-15 122559.png';
 import type { datosTicket } from '../Interface/datosTicket';
 export const ComponentePrincipal = () => {
   const [mostrarTicket, setMostrarTicket] = useState(false);

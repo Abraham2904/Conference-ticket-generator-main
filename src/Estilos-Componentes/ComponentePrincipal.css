@@ -105,5 +105,7 @@
       top: 30rem;
       right: 11rem;
     }
-    
+    .pattern-bottom{
+      width: 60%;
+    }
   }
